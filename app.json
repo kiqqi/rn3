@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "rn03",
+    "slug": "rn02",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access your camera"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+
+      "config": {
+          "applicationId": "51f71a9c-a835-4331-b801-e0c0cf3cd6c8"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "react-native-vision-camera"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "51f71a9c-a835-4331-b801-e0c0cf3cd6c8"
+      }
+    },
+    "notification": {
+      "vapidPublicKey": "BBir-aOadMDqmG8RuWTfVjs1WnD5hQRBSAwHishCeBtakR3vWzkmBbL1gdrAvBaqD8Q2NR6GqkRZ-xi2pAoCUjs",
+      "vapidPrivateKey": "svV8rifBLrz91hXycWHg1iy3Xl8loynkEg7mMLHxMLk",
+      "serviceWorkerPath": "./service-worker.js" 
+    },
+    "owner": "kiarita"
+  }
+}
